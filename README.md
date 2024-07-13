@@ -40,7 +40,6 @@ This repository contains the necessary scripts and data for the Raven Data proje
 Prerequisites
 
 	•	Python 3.11.0
-	•	Docker (if you are using Docker for deployment)
 
 Running the ETL Process
 
@@ -51,8 +50,8 @@ Running the ETL Process
 
 	2. Install Dependencies
   pip install -r requirements.txt
-
-  3.	Run the ETL Script
+  
+        3. Run the ETL Script
  Navigate to the preprocess directory and run the ETL script:
  cd preprocess
  python ETL.py
