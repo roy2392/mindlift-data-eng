@@ -37,7 +37,7 @@ flat_data = df.apply(parse_and_flatten, axis=1).explode().reset_index(drop=True)
 flat_df = pd.DataFrame(flat_data.tolist())
 
 # Save the flattened DataFrame to a new CSV file
-flat_df.to_csv('data/flattened_survey_data.csv', index=False)
+flat_df.to_csv('data/etl_results/flattened_survey_data.csv', index=False)
 
 # Show the first few rows of the flattened DataFrame
 flat_df.head()
