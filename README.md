@@ -1,8 +1,8 @@
-#Raven Data Project
+# Raven Data Project
 
 This repository contains the necessary scripts and data for the Raven Data project, which involves processing health survey data to generate a star schema for analysis and dahboard.
 
-##project structure
+## project structure
 
 .
 ├── .idea
@@ -35,7 +35,7 @@ This repository contains the necessary scripts and data for the Raven Data proje
 │   ├── Health Survey Dashboard task.pdf
 │   └── tables_schema.py
 
-Setup Instructions
+## Setup Instructions
 
 Prerequisites
 
@@ -74,7 +74,7 @@ Finally, run the tables_schema.py script to create the database schema:
 
 python tables_schema.py
 
-# Additional Resources
+## Additional Resources
 
 For a detailed explanation of the work process, please refer to the Notion page.
 
