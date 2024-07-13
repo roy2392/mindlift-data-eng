@@ -1,9 +1,10 @@
 # Raven Data Project
 
-This repository contains the necessary scripts and data for the Raven Data project, which involves processing health survey data to generate a star schema for analysis and dahboard.
+This repository contains the necessary scripts and data for the Raven Data project, which involves processing health survey data to generate a star schema for analysis and dashboard.
 
-## project structure
+## Project Structure
 
+```
 .
 ├── .idea
 │   ├── inspectionProfiles
@@ -34,51 +35,61 @@ This repository contains the necessary scripts and data for the Raven Data proje
 │   ├── ETL.py
 │   ├── Health Survey Dashboard task.pdf
 │   └── tables_schema.py
+```
 
 ## Setup Instructions
 
-Prerequisites
+### Prerequisites
 
-	•	Python 3.11.0
+- Python 3.11.0
 
-Running the ETL Process
+### Running the ETL Process
 
-	1.	Clone the Repository
+1. **Clone the Repository**
 
- git clone <repository-url>
- cd <repository-directory>
+   ```bash
+   git clone <repository-url>
+   cd <repository-directory>
+   ```
 
-	2. Install Dependencies
-  pip install -r requirements.txt
-  
-        3. Run the ETL Script
- Navigate to the preprocess directory and run the ETL script:
- cd preprocess
- python ETL.py
+2. **Install Dependencies**
 
- This script will process the raw health survey data and save the flattened survey data in the etl_results directory.
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-4. Running the Preprocessing Scripts
+3. **Run the ETL Script**
+
+   Navigate to the `preprocess` directory and run the ETL script:
+
+   ```bash
+   cd preprocess
+   python ETL.py
+   ```
+
+   This script will process the raw health survey data and save the flattened survey data in the `etl_results` directory.
+
+### Running the Preprocessing Scripts
 
 After running the ETL script, you need to run the preprocessing scripts to create the star schema.
 
+```bash
 python preprocess_fact.py
 python preprocess_questions.py
 python preprocess_survey.py
 python preprocess_users.py
+```
 
-5. Creating the Schema
+### Creating the Schema
 
-Finally, run the tables_schema.py script to create the database schema:
+Finally, run the `tables_schema.py` script to create the database schema:
 
+```bash
 python tables_schema.py
+```
 
 ## Additional Resources
 
-For a detailed explanation of the work process, please refer to the Notion page.
+For a detailed explanation of the work process, please refer to the [Notion page](https://pickle-fuel-2bd.notion.site/MindLift-Health-Survey-Dashboard-0aafabbd37ad4cedbfa9b6d3a1a1615d).
 
-https://pickle-fuel-2bd.notion.site/MindLift-Health-Survey-Dashboard-0aafabbd37ad4cedbfa9b6d3a1a1615d
-
-the dahboard mockup, created by Claude artifacts - can be found here:
-
-https://claude.site/artifacts/95833586-f83c-4482-942c-0d511a13beb8
+The dashboard mockup, created by Claude artifacts, can be found [here](https://claude.site/artifacts/95833586-f83c-4482-942c-0d511a13beb8).
