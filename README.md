@@ -4,7 +4,7 @@ This repository contains the necessary scripts and data for the Raven Data proje
 
 ## project structure
 
-.
+
 ├── .idea
 │   ├── inspectionProfiles
 │   ├── .gitignore
